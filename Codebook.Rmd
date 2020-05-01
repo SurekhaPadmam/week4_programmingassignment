@@ -1,0 +1,30 @@
+---
+title: "Codebook.md"
+author: "Aquinas"
+date: "5/1/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Initial dataset
+
+The initial dataset was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+
+This represents a study performed on Samsung Galaxy smartphones. Details of this original study can be found at http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions
+
+The dataset is comprised of both a training dataset and test dataset, comprising a variety of measurements from gyros, accelerometers, etc.
+
+## Study - processing steps taken
+
+The purpose of this script is to process and tidy the data. This was done using the following steps:
+
+1. The various text files are imported into new objects, with column names provided at the time of merger. (Script lines 11-25).
+2. The data are merged into a new dataset called merged_data (lines 26-29)
+3. Measurements for mean and standard deviation are extracted (42-44)
+4. Descriptive column names are provided (49-65)
+5. A new, tidy data set is created (69-74)
+
+
